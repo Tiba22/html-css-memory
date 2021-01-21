@@ -7,9 +7,14 @@
 
 body {
   background-color: #add8e6;
-  width: 40%;
-  margin-left: 30%;
+
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
   position: relative;
+  text-align: center;
 }
 
 .game-name {
@@ -20,78 +25,54 @@ body {
 }
 
 .carta {
-  width: 175px;
-  height: 200px;
+  width: 20%;
+  background-image: url(../img/pattern.png);
   background-color: white;
   border: 1px solid black;
   border-radius: 10px;
   background-size: contain;
   display: inline-block;
   position: relative;
-  margin-right: 10px;
-  margin-top: 20px;
+  margin: 1%;
+  padding: 5px;
+  padding-bottom: 40px;
 }
 
+
 .coperta {
-  background-image: url(../img/pattern.png);
+
   position: relative;
 }
 
 .testocarta {
   position: absolute;
   bottom: 3px;
-  right: 33px;
+  left: 0;
+  width: 100%;
   color: #e61986;
   font-size: 28px;
 }
 
-.testoscoperta {
-  position: absolute;
-  bottom: 3px;
-  right: 33px;
-  color: #cf7b31;;
-  font-size: 28px;
-}
-
-.sottom {
-  position: absolute;
-  left: 25px;
-}
-
-.trattore {
-  position: absolute;
-  left: 42px;
-}
-
-.bici {
-  position: absolute;
-  left: 47px;
-}
-
-.tram {
-  position: absolute;
-  left: 50px;
-}
-
 .image-box {
-  position: absolute;
-  width: 150px;
-  height: 170px;
-  left: 10px;
-  top: 5px;
+  width: 100%;
 }
 
-.scopri {
+.testocarta, .image-box {
   opacity: 0;
 }
 
-.scopri:hover {
-  opacity: inherit;
+.carta:hover > .testocarta,
+.carta:hover > .image-box,
+.scoperta > .testocarta,
+.scoperta > .image-box {
+  opacity: 1;
 }
 
-.coperta:hover {
-  background-image:none;
+.scoperta,
+.carta:hover {
+  background-image: none;
 }
+
 
 footer {
   margin-top: 15px;

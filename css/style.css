@@ -40,7 +40,6 @@ body {
 
 
 .coperta {
-
   position: relative;
 }
 
@@ -49,8 +48,12 @@ body {
   bottom: 3px;
   left: 0;
   width: 100%;
-  color: #e61986;
+  color: #cf7b31;
   font-size: 28px;
+}
+
+.visibile {
+  color: #e61986;
 }
 
 .image-box {
